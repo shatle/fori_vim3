@@ -25,9 +25,10 @@ Bundle 'jQuery'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/AutoComplPop'
 
+Bundle 'mattn/zencoding-vim'
+let g:user_zen_settings={
+\	'indentation' : '  '
+\}
+
 " require!
 filetype plugin indent on
-
-
-
-
