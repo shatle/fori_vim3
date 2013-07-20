@@ -2,10 +2,14 @@
 set nocompatible
 set encoding=utf-8
 set tabstop=2
+set shiftwidth=2
+set expandtab
 set nu
-syntax on
 set autoindent
 set smartindent
+set clipboard=unnamedplus
+set hlsearch
+syntax on
 
 " require!
 filetype off
@@ -16,13 +20,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " self-defined 
-Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jQuery'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'vim-scripts/AutoComplPop'
 
 Bundle 'mattn/zencoding-vim'
