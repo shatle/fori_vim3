@@ -21,6 +21,14 @@ mv ~/.vimrc ~/vimrc-bk
 
 Lauch `vim`, and run `:BundleInstall`
 
+## Usual Commands
+
+* `:BundleInstall!` installs and updates plugins 
+
+* `:BundleClean!` removes unused plugins with no questions
+
+* `Ctrl + y + ','` zencoding/emmet action keys
+
 ## (G)Vim Skills --(Chinese)
 
 ### 基本操作
