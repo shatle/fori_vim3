@@ -1,5 +1,7 @@
 Use [vundle](https://github.com/gmarik/vundle) to manage vim plugins
 
+and https://github.com/shatle/fori_zsh should make work more colorful.
+
 ## Install
 
 Mostly, you should move original vim's files and backup
