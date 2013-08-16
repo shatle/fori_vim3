@@ -1,6 +1,6 @@
 Use [vundle](https://github.com/gmarik/vundle) to manage vim plugins
 
-and https://github.com/shatle/fori_zsh should make work more colorful.
+https://github.com/shatle/fori_zsh should make work more colorful, i use font: `Ubuntu Mono derivative Powerline`
 
 ## Install
 
