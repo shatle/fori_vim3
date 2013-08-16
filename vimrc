@@ -32,12 +32,21 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
-Bundle 'kien/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'  
 Bundle 'jQuery'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'mrtazz/molokai.vim'
+
+Bundle 'Lokaltog/powerline'
+let g:Powerline_symbols='fancy'
+set laststatus=2
+set noshowmode
+set t_Co=256
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts=1
+" let g:Powerline_symbols='fancy'
 
 Bundle 'mattn/emmet-vim'
 let g:user_zen_settings={
