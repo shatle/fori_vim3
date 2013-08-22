@@ -53,7 +53,13 @@ Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'mrtazz/molokai.vim'
 
-Bundle 'Lokaltog/powerline'
+" `gcc` comment current line in normal mode
+Bundle 'tomtom/tcomment_vim'
+
+Bundle 'junegunn/vim-easy-align'
+vnoremap <silent> <Enter> :EasyAlign<cr>
+
+" Bundle 'Lokaltog/powerline'
 let g:Powerline_symbols='fancy'
 set laststatus=2
 set noshowmode
