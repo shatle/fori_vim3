@@ -31,6 +31,12 @@ Lauch `vim`, and run `:BundleInstall`
 
 * `Ctrl + y + ','` zencoding/emmet action keys
 
+* Press `<F5>` to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
+
+* Press `<c-f>` and `<c-b>` to cycle between modes.
+
+* Use `:25` to jump to line 25.
+
 ## (G)Vim Skills --(Chinese)
 
 ### 基本操作
