@@ -11,7 +11,7 @@ set clipboard=unnamedplus    " auto to global clipboard?
 set hlsearch                 " highlight search result, :nohl disables highlight
 set foldmethod=indent        "fold based on indent
 set foldnestmax=5           "deepest fold is 5 levels
-"set nofoldenable             "dont fold by default
+set nofoldenable             "dont fold by default
 set foldlevel=1              "this is just what i use
 
 "ignore tmp files 
@@ -52,6 +52,15 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'mrtazz/molokai.vim'
+
+Bundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup=1
+colorscheme default
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 " `gcc` comment current line in normal mode
 Bundle 'tomtom/tcomment_vim'
