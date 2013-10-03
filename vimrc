@@ -13,6 +13,7 @@ set foldmethod=indent        "fold based on indent
 set foldnestmax=5           "deepest fold is 5 levels
 set nofoldenable             "dont fold by default
 set foldlevel=1              "this is just what i use
+set clipboard=unnamedplus
 
 "ignore tmp files 
 set nobackup                 " no *~ files
@@ -43,6 +44,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-markdown'
+Bundle 'nono/vim-handlebars'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'kien/ctrlp.vim'  
 Bundle 'jQuery'
@@ -62,6 +64,10 @@ colorscheme default
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
+" Bundle 'scrooloose/nerdtree'
+" autocmd vimenter * if !argc() | NERDTree | endif
+" map <C-n> :NERDTreeToggle<CR>
+
 " `gcc` comment current line in normal mode
 Bundle 'tomtom/tcomment_vim'
 
@@ -80,6 +86,7 @@ Bundle 'mattn/emmet-vim'
 let g:user_zen_settings={
 \	'indentation' : '  '
 \}
+
 
 " require!
 filetype plugin indent on
