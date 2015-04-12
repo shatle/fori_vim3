@@ -13,7 +13,6 @@ set foldmethod=indent        "fold based on indent
 set foldnestmax=5           "deepest fold is 5 levels
 set nofoldenable             "dont fold by default
 set foldlevel=1              "this is just what i use
-set clipboard=unnamedplus
 
 "ignore tmp files 
 set nobackup                 " no *~ files
@@ -31,31 +30,38 @@ syntax on
 
 " require!
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " vundle required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " self-defined 
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-markdown'
-Bundle 'nono/vim-handlebars'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'kien/ctrlp.vim'  
-Bundle 'jQuery'
-Bundle 'shatle/vim-slim'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-scripts/AutoComplPop'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'mrtazz/molokai.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-markdown'
+Plugin 'nono/vim-handlebars'
+Plugin 'thoughtbot/vim-rspec'
 
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'kien/ctrlp.vim'  
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll)$'
+  \ }
+
+Plugin 'jQuery'
+Plugin 'shatle/vim-slim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'mrtazz/molokai.vim'
+
+Plugin 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 let g:indent_guides_auto_colors = 0
@@ -64,29 +70,30 @@ colorscheme default
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
-" Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " autocmd vimenter * if !argc() | NERDTree | endif
-" map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " `gcc` comment current line in normal mode
-Bundle 'tomtom/tcomment_vim'
+Plugin 'tomtom/tcomment_vim'
 
-Bundle 'junegunn/vim-easy-align'
+Plugin 'junegunn/vim-easy-align'
 vnoremap <silent> <Enter> :EasyAlign<cr>
 
-" Bundle 'Lokaltog/powerline'
+Plugin 'Lokaltog/powerline'
 let g:Powerline_symbols='fancy'
 set laststatus=2
 set noshowmode
 set t_Co=256
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts=1
 
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 let g:user_zen_settings={
 \	'indentation' : '  '
 \}
 
 
 " require!
+call vundle#end()
 filetype plugin indent on
