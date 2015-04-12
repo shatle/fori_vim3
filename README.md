@@ -21,13 +21,13 @@ mv ~/.vimrc ~/vimrc-bk
 
 3. Install My plugins
 
-Lauch `vim`, and run `:BundleInstall`
+Lauch `vim`, and run `:PluginInstall`
 
 ## Usual Commands
 
-* `:BundleInstall!` installs and updates plugins 
+* `:PluginInstall` installs and updates plugins 
 
-* `:BundleClean!` removes unused plugins with no questions
+* `:PluginClean` removes unused plugins with no questions
 
 * `Ctrl + y + ','` zencoding/emmet action keys
 
