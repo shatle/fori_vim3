@@ -49,7 +49,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'kien/ctrlp.vim'  
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
   \ 'file': '\v\.(exe|so|dll)$'
   \ }
 
