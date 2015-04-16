@@ -36,16 +36,20 @@ call vundle#begin()
 " vundle required!
 Plugin 'gmarik/Vundle.vim'
 
+" =====
 " self-defined 
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-markdown'
-Plugin 'nono/vim-handlebars'
-Plugin 'thoughtbot/vim-rspec'
+" =====
 
+" edit rails project in quickly
+" :Emodel, :Eview, :Econtroller,  more in :h rails 
+Plugin 'tpope/vim-rails' 
+
+" work with git
+" :Gstatus, :Gcommit , :Gdiff, :Gread
+Plugin 'tpope/vim-fugitive'
+
+" <C-p> enter file in quickly
+" <C-f>
 Plugin 'kien/ctrlp.vim'  
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
@@ -53,14 +57,25 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$'
   \ }
 
-Plugin 'jQuery'
+" snips
+Plugin 'drmingdrmer/xptemplate'
+let g:xptemplate_key = '<Tab>'
+
+" auto words in buf
+Plugin 'vim-scripts/AutoComplPop'
+
+" Plugin 'jQuery'
 Plugin 'shatle/vim-slim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'vim-scripts/AutoComplPop'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-cucumber'
+" Plugin 'tpope/vim-markdown'
+Plugin 'nono/vim-handlebars'
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'mrtazz/molokai.vim'
 
+" indent guides
 Plugin 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
@@ -70,6 +85,7 @@ colorscheme default
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
+" view folder, NERDTree
 Plugin 'scrooloose/nerdtree'
 " autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
@@ -77,9 +93,17 @@ map <C-n> :NERDTreeToggle<CR>
 " `gcc` comment current line in normal mode
 Plugin 'tomtom/tcomment_vim'
 
+" 
 Plugin 'junegunn/vim-easy-align'
 vnoremap <silent> <Enter> :EasyAlign<cr>
 
+" .head+.content , then Enter: Ctrl+y+,
+Plugin 'mattn/emmet-vim'
+let g:user_zen_settings={
+\	'indentation' : '  '
+\}
+
+" Theme 
 Plugin 'Lokaltog/powerline'
 let g:Powerline_symbols='fancy'
 set laststatus=2
@@ -87,12 +111,6 @@ set noshowmode
 set t_Co=256
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts=1
-
-Plugin 'mattn/emmet-vim'
-let g:user_zen_settings={
-\	'indentation' : '  '
-\}
-
 
 " require!
 call vundle#end()
