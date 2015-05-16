@@ -92,6 +92,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 " `gcc` comment current line in normal mode
 Plugin 'tomtom/tcomment_vim'
+" add rust comment style
+let g:tcomment_types={'rust': '/// %s'}
 
 " 
 Plugin 'junegunn/vim-easy-align'
@@ -111,6 +113,8 @@ set noshowmode
 set t_Co=256
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts=1
+
+Plugin 'rust-lang/rust.vim'
 
 " require!
 call vundle#end()
