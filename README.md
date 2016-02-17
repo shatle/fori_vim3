@@ -13,7 +13,7 @@ mv ~/.vimrc ~/vimrc-bk
 
 1. Setup vundle
 
-        $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+        $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 
 2. Setup and config my vimrc
 
