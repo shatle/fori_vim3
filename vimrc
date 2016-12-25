@@ -81,13 +81,14 @@ let g:xptemplate_key = '<Tab>'
 Plugin 'vim-scripts/AutoComplPop'
 
 " Plugin 'jQuery'
-Plugin 'shatle/vim-slim'
+" Plugin 'shatle/vim-slim'
+Plugin 'JulesWang/css.vim'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-cucumber'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'tpope/vim-haml'
+" Plugin 'tpope/vim-cucumber'
 " Plugin 'tpope/vim-markdown'
-Plugin 'nono/vim-handlebars'
+" Plugin 'nono/vim-handlebars'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
 
@@ -122,15 +123,29 @@ let g:user_zen_settings={
 \}
 
 " Theme 
-Plugin 'Lokaltog/powerline'
-let g:Powerline_symbols='fancy'
-set laststatus=2
-set noshowmode
-set t_Co=256
-Plugin 'bling/vim-airline'
-let g:airline_powerline_fonts=1
+" Plugin 'Lokaltog/powerline'
+" let g:Powerline_symbols='fancy'
+" set laststatus=2
+" set noshowmode
+" set t_Co=256
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" let g:airline_powerline_fonts=1
 
-Plugin 'rust-lang/rust.vim'
+" Plugin 'rust-lang/rust.vim'
+
+" === snippets
+"
+" vim-react-snippets:
+Plugin 'justinj/vim-react-snippets'
+"
+" Ultisnips
+Plugin 'SirVer/ultisnips'
+"
+" Other sets of snippets (optional):
+Plugin 'honza/vim-snippets'
+"
+" === END
 
 " require!
 call vundle#end()
